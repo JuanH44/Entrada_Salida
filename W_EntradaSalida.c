@@ -16,8 +16,6 @@ int main(int argc, char const *argv[]) {
 }
 
 int crear(char* dir){
-
-  {
     HANDLE h = CreateFile(
         dir,
         GENERIC_READ | GENERIC_WRITE,
@@ -34,9 +32,9 @@ int crear(char* dir){
     }
     printf("%p\n", h);
 
-    int fd = _open_osfhandle(h, 0);
+    //int fd = _open_osfhandle(h, 0);
 
-    printf("fd %d\n", fd);
+    //printf("fd %d\n", fd);
 
     return 0;
 
